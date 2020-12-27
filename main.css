@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background: #222;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.juego{
+	max-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.juego .celdas-contain{
+	width: 430px;
+	height: 430px;
+	display: grid;
+	grid-template-columns: repeat(2,200px);
+	grid-gap: 10px;
+	background: #555;
+	padding: 10px;
+
+}
+
+.celda{
+	background: #777;
+	width: 200px;
+	height: 200px;
+	border-radius: 22px;
+	cursor: pointer;
+}
+
+div#c1.active{
+	background: #f00;
+}
+
+div#c2.active{
+	background: #0f0;
+}
+
+div#c3.active{
+	background: #ff0;
+}
+
+div#c4.active{
+	background: #00f;
+}
+
+.button{
+	border: none;
+	outline: none;
+	background: #555;
+	color: #777;
+	padding: 10px;
+	border-radius: 0 0 22px 22px;
+	border-top: 1px solid #777;
+	cursor: pointer;
+}
+
+.button:hover{
+	color: #fff;
+}
+
+.nivel{
+	color: #fff;
+	background: #555;
+	border-radius: 22px 22px 0 0;
+	border-bottom: 1px solid #777;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;align-items: center;
+	padding: 10px;
+}
+
+.nivel p:first-child{
+	color: #777;
+	font-size: 21px;
+}
+
+.ui-screen{
+	color: #fff;
+	font-size: 35px;
+	position: absolute;
+	align-self: center;
+	text-align: center;
+}
